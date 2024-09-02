@@ -22,17 +22,17 @@
       <button
         class="navbar-toggle"
         type="button"
-        data-toggle="collaspe"
+        data-toggle="collapse"
         data-target="#navbar"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collaspe navbar-collaspe" id="navbar">
         <div class="navbar-nav">
-            <a href="/login" class="nav-item nav-link" id="login"></a>
-            <a href="/sign-up" class="nav-item nav-link" id="sign_up"></a>
-            <a href="/logout" class="nav-item nav-link" id="logout"></a>
-            <a href="/" class="nav-item nav-link" id="home"></a>
+            <a href="/login" class="nav-item nav-link" id="login">Login</a>
+            <a href="/sign-up" class="nav-item nav-link" id="sign_up">Sign Up</a>
+            <a href="/logout" class="nav-item nav-link" id="logout">Logout</a>
+            <a href="/" class="nav-item nav-link" id="home">Home</a>
         </div>
       </div>
     </nav>
@@ -54,8 +54,8 @@
     ></script>
 
     <script>
-      type = "text/javascript";
-      src = "{{ url_for('static', filename='index.js') }}";
+      type="text/javascript";
+      src="{{ url_for('static', filename='index.js') }}";
     </script>
   </body>
 </html>
